@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  background-size: cover;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  padding-top: 3px;
+  cursor: pointer;
+  width: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container li {
+  margin: 0 10px;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-container li a {
+  text-decoration: none;
+  color:#7FC7D9;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.nav-container li a:active{
+  color:#23547B;
+}
+
+
+.select-language {
+  appearance: none;
+  background: transparent;
+  border-style: none;
+  color: #7FC7D9;
+  font-weight: 500;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-language option {
+  background: black;
+}
+
+.Gallery-wrapper {
+  display:flex;
+  align-items: first baseline;
+}
+
+.Suscribe{
+  color:#e5e1da;
+}
+
+footer{
+  margin-top: auto; 
+  width: 100%;
+  background-color: #ffff;
+  color:#7FC7D9;
+  text-align: center;
+  padding: 20px 0;
 }
